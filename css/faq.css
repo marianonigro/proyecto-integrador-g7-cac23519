@@ -1,0 +1,40 @@
+.faq-section {
+    width: clamp(240px, 100%, 1100px);
+    margin: 0 auto;
+}
+
+iconify-icon.expand-icon {
+    font-size: 1.7rem;
+}
+
+iconify-icon.expand-icon:hover {
+    color: var(--color-naranja);
+}
+
+
+details {
+    cursor: pointer;
+}
+
+summary {
+    font-size: 1.5rem;
+    color: var(--color-principal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+summary h5 {
+    font-weight: 600;
+    color: var(--color-principal);
+}
+
+details>p {
+    max-width: 1100px;
+    color: var(--color-principal);
+    font-size: 1rem;
+    line-height: 155%;
+    margin: 2rem 0;
+    padding-left: 10px;
+}

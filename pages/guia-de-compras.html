@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/branding/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Guía de Compras | Bookshop</title>
+</head>
+
+<body>
+
+    <header> <!-- Inicio Header -->
+        <div class="background-image">
+            <nav class="navbar">
+                <a href="../index.html">
+                    <img class="logo" src="../images/branding/isologo-bookshop.svg" alt="isologo bookshop">
+                </a>
+                <div class="humburger-menu" id="toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul class="navbar-nav" id="nav">
+                    <li class="nav-item"><a class="nav-link" href="../index.html#libros">Libros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#manga">Comics & Manga</a></li>
+                    <li class="nav-item"><a class="nav-link" href="guia-de-compras.html">Guía de Compras</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="carrito.html" title="cart"><iconify-icon icon="iconoir:cart" class="cart"></iconify-icon></a></li>
+                </ul>
+            </nav>
+            <form class="busqueda" action="/busqueda" method="get">
+                <input type="search" name="busqueda" id="busqueda"
+                    placeholder="Ingresar título, autor, editorial, ISBN">
+                <label for="busqueda"><iconify-icon icon="gg:search" class="search-icon"></iconify-icon></label>
+            </form>
+        </div>
+    </header> <!-- Fin Header -->
+
+    <main id="inicio" class="general"> <!-- Inicio del contenedor principal -->
+
+        <section id="libros" class="general">
+            <h2>Guía de compras</h2>
+            <section class="contenedor">
+
+                 <!--contenedor de los elementos-->
+                 <article class="contenedor-items">
+                    <div class="faq-section">
+                        <details>
+                            <summary>
+                                <h5>¿Cómo busco un producto específico?</h5>
+                                <span><iconify-icon icon="eva:arrow-down-fill"
+                                        class="expand-icon"></iconify-icon></span>
+                            </summary>
+                            <p>La búsqueda se encuentra en la mayoría de las pantallas ubicada en la parte superior
+                                central, debajo del logo de Bookshop. <br>
+                                Ingrese el texto en el casillero, y se le exhibirán todos aquellos productos que
+                                muestren coincidencias. Si encuentra entre las opciones el producto de su interés,
+                                posiciónese sobre el mismo agreguelo al carrito. <br>
+                                Oprima el botón <strong>Lupa</strong>. <br>
+                                Se muestran los resultados de la búsqueda que coinciden con el criterio ingresado hasta
+                                un máximo de 8 productos por página. Si supera este
+                                máximo de 10 productos oprima sobre la numeración de las páginas siguientes ubicadas al
+                                pie de página. <br>
+                                </p>
+                        </details>
+                        <hr>
+                        <details>
+                            <summary>
+                                <h5>¿Puedo verificar mis compras?</h5>
+                                <span><iconify-icon icon="eva:arrow-down-fill"
+                                        class="expand-icon"></iconify-icon></span>
+                            </summary>
+                            <p>Sí, es posible ver el estado de sus compras. En el márgen superior derecho presione en
+                             <strong>"ícono del carrito"</strong>.
+                                <br>
+                                Se exhibirán todas las compras en proceso a Bookshop.
+                                tambien despliega el detalle completo de los productos de la compra.
+                            </p>
+                        </details>
+                        <hr>
+                        <details>
+                            <summary>
+                                <h5> ¿Puedo cancelar una compra luego de realizada?</h5>
+                                <span><iconify-icon icon="eva:arrow-down-fill"
+                                        class="expand-icon"></iconify-icon></span>
+                            </summary>
+                            <p>Para cancelar una compra envíe un e-mail a <strong>ventas@bookshop.com</strong>
+                                informando el número de compra que quiere cancelar. Si la compra ya hubiera sido
+                                enviada, al recibir el paquete debe rechazarlo informando que lo devuelvan al remitente.
+                            </p>
+                        </details>
+                        <hr>
+                        <details>
+                            <summary>
+                                <h5>¿Puedo modificar la cantidad de un producto luego de realizada la compra?</h5>
+                                <span><iconify-icon icon="eva:arrow-down-fill"
+                                        class="expand-icon"></iconify-icon></span>
+                            </summary>
+                            <p>Para cancelar un producto envíe un e-mail a <strong>ventas@bookshop.com</strong>
+                                informando el número de compra.</p>
+                        </details>
+                        <hr>
+                        <details>
+                            <summary>
+                                <h5>¿Puedo agregar un producto luego de realizada la compra?</h5>
+                                <span><iconify-icon icon="eva:arrow-down-fill"
+                                        class="expand-icon"></iconify-icon></span>
+                            </summary>
+                            <p>Para agregar un producto a una compra en curso, envíe un e-mail a
+                                <strong>ventas@bookshop.com</strong> informando el número de compra y el título que
+                                desea agregar.
+                            </p>
+                        </details>
+                        <hr>
+                        <details>
+                            <summary>
+                                <h5>¿Tengo que pagar algún impuesto para compras fuera de la Argentina?</h5>
+                                <span><iconify-icon icon="eva:arrow-down-fill"
+                                        class="expand-icon"></iconify-icon></span>
+                            </summary>
+                            <p>Para compras fuera de Argentina, los cargos en el país de destino por retiro de Aduana o
+                                impuestos aduaneros son responsabilidad del cliente y pueden variar de país en país.
+                                Recomendamos contactar la oficina de Aduanas local de su país para obtener información
+                                de posibles cargos por los conceptos mencionados.</p>
+                        </details>
+                        <hr>
+                        <details>
+                            <summary>
+                                <h5>¿Cuándo recibiré mi compra?</h5>
+                                <span><iconify-icon icon="eva:arrow-down-fill"
+                                        class="expand-icon"></iconify-icon></span>
+                            </summary>
+                            <p>Para averiguar en cuánto tiempo recibiré mi compra, debo considerar la salida del
+                                depósito (por ejemplo "normalmente salida del depósito en 3 días"), más el tiempo de
+                                envío. <br>
+
+                                La salida del depósito es el tiempo que normalmente nos lleva conseguir los libros que
+                                ha solicitado, desde el momento en que usted realiza la compra. <br>
+
+                                El tiempo de envío varía en función de la distancia desde nuestro centro de
+                                distribución.</p>
+                        </details>
+                    </div>
+                </article>
+
+            </section>
+        </section>
+        <!-- </section> -->
+
+        <!-- Inicio Footer -->
+        <footer>
+            <section class="footer">
+                <nav class="social-media">
+                    <a href="mailto:bookshop@mail.com" title="Email"><iconify-icon icon="material-symbols:mail-outline" class="social-icon"></iconify-icon></a>                    </a>
+                    <a href="" title="facebook"><iconify-icon icon="mdi:facebook" class="social-icon"></iconify-icon></a>
+                    <a href="" title="instagram"><iconify-icon icon="mdi:instagram" class="social-icon"></iconify-icon></a>
+                    <a href="" title="spotify"><iconify-icon icon="mdi:spotify" class="social-icon"></iconify-icon></a>
+                    <a href="" title="twitter"><iconify-icon icon="mdi:twitter" class="social-icon"></iconify-icon></a>
+                </nav>
+                <nav>
+                    <ul class="navbar-nav" id="nav">
+                        <li class="nav-item"><a class="nav-link nav-footer" href="../index.html#libros">Libros</a></li>
+                        <li class="nav-item"><a class="nav-link nav-footer" href="../index.html#manga">Comics & Manga</a></li>
+                        <li class="nav-item"><a class="nav-link nav-footer" href="guia-de-compras.html">Guía de Compras</a></li>
+                        <li class="nav-item"><a class="nav-link nav-footer" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+                <picture class="logo-abajo">
+                    <a href="../index.html">
+                        <img class="logo-footer" src="../images/branding/isologo-bookshop-bo.svg" alt="logo">
+                    </a>
+                </picture>
+            </section>
+            <div>
+                <h5> 2023 Bookshops | Grupo 7 CaC 23519 Fullstack Python | All Rights Reserved</h5>
+            </div>
+        </footer>
+        <!-- Fin Footer -->
+
+        <!-- Boton Ir Arriba -->
+        <div id="boton-arriba">
+            <i class="fa-solid fa-caret-up"></i>
+        </div>
+
+        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+        <script src="../js/index.js"></script>
+</body>
+
+</html>

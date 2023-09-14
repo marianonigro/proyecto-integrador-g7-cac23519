@@ -1,0 +1,25 @@
+iconify-icon.btn-eliminar{
+color: var(--color-principal);
+font-size: 1.3rem;
+}
+
+iconify-icon.btn-eliminar:hover{
+    color: var(--color-naranja);
+    font-size: 1.3rem;
+    }
+
+/* carrito seccion responsive*/
+@media (max-width:850px) {
+    .contenedor {
+        display: block;
+    }
+
+    .contenedor-items {
+        width: 100% !important;
+    }
+
+    .carrito {
+        width: 100%;
+
+    }
+}

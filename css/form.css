@@ -1,0 +1,111 @@
+/* Inicio Formulario */
+
+.form {
+    margin: 0 auto;
+    width: clamp(240px, 100%, 800px);
+    height: auto;
+}
+
+form .grupo {
+    position: relative;
+    margin: 45px;
+}
+
+.form input,
+.form textarea {
+    background: none;
+    color: var(--color-principal);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--color-principal);
+    resize: none;
+}
+
+.form input:focus,
+.form textarea:focus {
+    outline: none;
+    color: var(--amarillo);
+}
+
+.form input:focus~label,
+.form input:valid~label,
+.form textarea:focus~label,
+.form textarea:valid~label {
+    position: absolute;
+    top: -14px;
+    font-size: 12px;
+    color: var(--color-naranja);
+}
+
+.form label {
+    font-family: var(--font-principal);
+    font-weight: 500;
+    color: var(--color-principal);
+    font-size: 1rem;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+
+.form input:focus~.barra::before,
+.form textarea:focus~.barra::before {
+    width: 100%;
+}
+
+.barra {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.barra::before {
+    content: '';
+    height: 1px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, lightblue, orangered);
+    transition: 0.3s ease all;
+    left: 0%;
+}
+
+button.submit {
+    background-color: var(--color-principal);
+    border: none;
+    display: block;
+    width: 140px;
+    height: 40px;
+    color: var(--color-blanco);
+    font-weight: 600;
+    border-radius: 4px;
+    margin: 10px auto;
+    cursor: pointer;
+    font-size: .8rem;
+    font-family: inherit;
+    transition: background-color .5s ease, color .5s ease;
+}
+
+button.submit:hover {
+    background-color: var(--color-naranja);
+    color: var(--azul);
+}
+
+.form-content {
+    padding: 30px 0;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.formulario {
+    margin-top: 2rem;
+    border-top: 1px solid rgba(33, 53, 85, 0.203);
+}
