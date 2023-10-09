@@ -63,7 +63,7 @@ let data_bookshop=[
 	precio: 10200
 	},
 	{id: 8,
-	{isbn: "9789504979395",
+	isbn: "9789504979395",
 	titulo: "Adiós Cachorra",
 	autor: "Lucía Numer Bellomi",
 	editorial: "Planeta",
@@ -153,7 +153,7 @@ let data_bookshop=[
 	precio: 6590
 	},
 	{id: 18,
-	{isbn:"9781974728381",
+	isbn:"9781974728381",
 	titulo: "Demon Slayer : Kimetsu no Yaiba",
 	autor: "Ryoji Hirano",
 	categoria: "Manga",
@@ -162,7 +162,7 @@ let data_bookshop=[
 	precio: 18119
 	},
 	{id: 19,
-	{isbn:"9788418645457",
+	isbn:"9788418645457",
 	titulo: "Demon Slayer 11",
 	autor: "Koyoharu Gotouge",
 	categoria: "Manga",
@@ -171,7 +171,7 @@ let data_bookshop=[
 	precio: 3200
 	},
 	{id: 20,
-	{isbn:"9788418645839",
+	isbn:"9788418645839",
 	titulo: "Demon Slayer 12",
 	autor: "Koyoharu Gotouge",
 	categoria: "Manga",
@@ -180,7 +180,7 @@ let data_bookshop=[
 	precio: 3200
 	},
 	{id: 21,
-	{isbn:"9788418751387",
+	isbn:"9788418751387",
 	titulo: "Demon Slayer 13",
 	autor: "Koyoharu Gotouge",
 	categoria: "Manga",
@@ -189,7 +189,7 @@ let data_bookshop=[
 	precio: 3200
 	},
 	{id: 22,
-	{isbn:"9788418963834",
+	isbn:"9788418963834",
 	titulo: "Demon Slayer 17",
 	autor: "Koyoharu Gotouge",
 	categoria: "Manga",
@@ -198,7 +198,7 @@ let data_bookshop=[
 	precio: 3200
 	},
 	{id: 23,
-	{isbn:"9788419185020",
+	isbn:"9788419185020",
 	titulo: "Demon Slayer 20",
 	autor: "Koyoharu Gotouge",
 	categoria: "Manga",
@@ -207,7 +207,7 @@ let data_bookshop=[
 	precio: 3200
 	},
 	{id: 24,
-	{isbn:"8498144167",
+	isbn:"8498144167",
 	titulo: "Akira Color 02",
 	autor: "Katsuhiro Otomo",
 	categoria: "Manga",
@@ -216,7 +216,7 @@ let data_bookshop=[
 	precio: 23609
 	},
 	{id: 25,
-	{isbn:"9789878190938",
+	isbn:"9789878190938",
 	titulo: "Attack on Titan 01",
 	autor: "Isayama Hajime",
 	categoria: "Manga",
@@ -225,7 +225,7 @@ let data_bookshop=[
 	precio: 3000
 	},
 	{id: 26,
-	{isbn:"9789877245288",
+	isbn:"9789877245288",
 	titulo: "Batman 9 Caballero Maldito",
 	autor: "Tim Loeb Jeph / Sale",
 	categoria: "Comics",
@@ -234,7 +234,7 @@ let data_bookshop=[
 	precio: 4000
 	},
 	{id: 27,
-	{isbn:"9789877246162",
+	isbn:"9789877246162",
 	titulo: "Batman la Maldicion del Caballero Blanco",
 	autor: "Matt Murphy Sean / Hollingsworth",
 	categoria: "Comics",
@@ -243,7 +243,7 @@ let data_bookshop=[
 	precio: 8700
 	},
 	{id: 28,
-	{isbn:"9789877245523",
+	isbn:"9789877245523",
 	titulo: "Daredevil 7",
 	autor: "Milla Soule",
 	categoria: "Comics",
@@ -252,7 +252,7 @@ let data_bookshop=[
 	precio: 3800
 	},
 	{id: 29,
-	{isbn:"9789877245257",
+	isbn:"9789877245257",
 	titulo: "Batman 12 Joker",
 	autor: "Lee Azzarello Brian / Bermejo",
 	categoria: "Comics",
@@ -261,7 +261,7 @@ let data_bookshop=[
 	precio: 4000
 	},
 	{id: 30,
-	{isbn:"9788418382246",
+	isbn:"9788418382246",
 	titulo: "Joker 80 Años",
 	autor: "Varios Autores",
 	categoria: "Comics",
@@ -270,7 +270,7 @@ let data_bookshop=[
 	precio: 33086
 	},
 	{id: 31,
-	{isbn:"9789877247909",
+	isbn:"9789877247909",
 	titulo: "Green Lantern Temporada dos",
 	autor: "Grant Morrison",
 	categoria: "Comics",
@@ -279,7 +279,7 @@ let data_bookshop=[
 	precio: 8800
 	},
 	{id: 32,
-	{isbn:"9781846537639",
+	isbn:"9781846537639",
 	titulo: "Amazing Spider-Man Vol. 3",
 	autor: "Dan Slott",
 	categoria: "Comics",
@@ -288,7 +288,7 @@ let data_bookshop=[
 	precio: 29219
 	},
 	{id: 33,
-	{isbn:"9789877243338",
+	isbn:"9789877243338",
 	titulo: "Spiderman / Deadpool Vol. 2",
 	autor: "Duggan Posen",
 	categoria: "Comics",
