@@ -6,7 +6,7 @@
 ### ✏️ 1. Título y Descripción del Proyecto:
 -	Título: "Bookshop"
 -	Descripción: Creación de un sitio web de venta de libros, comic y manga.
-### 🧑🏻‍👩🏻‍🧒 2. Público Objetivo:
+### :family: 2. Público Objetivo:
 -	Público: General en libros y de nicho en el ámbito de comics y manga.
 ### 🗂️ 3.	Estructura del Sitio:
 -	Libros
