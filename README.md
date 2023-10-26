@@ -28,8 +28,8 @@
 Equipo: <br>
   * Mariano R. Nigro - marianus@gmail.com (Enlace con el Instructor, diseño, desarrollo, contenido)<br>
   * Mario Ludueña - luduenamario@gmail.com (Desarrollo, Contenido)<br>
-  * Juan García - yovigarcia16@gmail.com (Desarrollo) ```(c/Baja del Curso)```<br>
-  * Demian Urbano - Demianurbano@gmail.com (Contenido) ```(c/Baja del Curso)```<br>
+  * Juan García - yovigarcia16@gmail.com (Desarrollo) `(c/Baja del Curso)`<br>
+  * Demian Urbano - Demianurbano@gmail.com (Contenido) `(c/Baja del Curso)`<br>
   
 Cronograma Tentativo:<br>
 -	Diseño y planificación: 1 semana
@@ -44,6 +44,6 @@ Cronograma Tentativo:<br>
 ### 📧 9.	Contacto:
 -	Email del Representante: marianus@gmail.com
 ### 📅 10.	Fecha de Entrega:
-La fecha de entrega del proyecto desde el miércoles 18 hasta el viernes 27 de octubre de 2023.
+***`La fecha de entrega del proyecto desde el miércoles 18 hasta el viernes 27 de octubre de 2023`***
 
 
