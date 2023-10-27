@@ -109,3 +109,7 @@ button.submit:hover {
     margin-top: 2rem;
     border-top: 1px solid rgba(33, 53, 85, 0.203);
 }
+
+#envio-mail {
+    opacity: 0;
+}

@@ -10,9 +10,7 @@
     --color-fondoClaro: #f5efe7;
     --color-naranja: #FBA052;
     --color-blanco: #f5f5f5;
-
     --font-principal: 'Raleway', sans-serif;
-
 }
 
 * {
@@ -39,8 +37,8 @@ ul {
 }
 
 p {
- font-size: 1rem;
- font-weight: 500;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 /* seccion header*/
@@ -61,7 +59,7 @@ header {
 }
 
 .logo:hover {
-    transform: scale(1.02)
+    transform: scale(1.05)
 }
 
 .navbar {
@@ -91,7 +89,7 @@ header {
     padding-bottom: 10px;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: var(--color-principal);
     font-weight: 600;
 }
@@ -110,6 +108,19 @@ header {
 
 .nav-link:hover::before {
     width: 100%;
+}
+
+#cuenta-carrito {
+    position: absolute;
+    background-color: var(--color-naranja);
+    border-radius: 100%;
+    display: inline-block;
+    height: 21px;
+    line-height: 21px;
+    aspect-ratio: 1;
+    text-align: center;
+    font-size: .85rem;
+    color: var(--color-principal);
 }
 
 .humburger-menu i {
@@ -139,7 +150,7 @@ header {
 }
 
 iconify-icon.cart {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
 form {
@@ -147,8 +158,9 @@ form {
     align-items: center;
     justify-content: center;
 }
+
 /* label lupa */
-label { 
+label {
     color: var(--color-fondoClaro);
     font-weight: bold;
     margin-right: 10px;
@@ -170,20 +182,39 @@ input[type="search"] {
     border: none;
 }
 
-iconify-icon {
+#busqueda:hover {
+    outline: 2px solid var(--color-naranja);
+}
+
+.search-button {
+    background: transparent;
+    border: none;
     font-size: 2rem;
     margin-left: 6px;
+    color: var(--color-blanco);
     cursor: pointer;
     transition: color .3s ease;
 }
 
-iconify-icon:hover {
-    color: var(--color-principal);
+/*iconify-icon {
+    font-size: 2rem;
+    margin-left: 6px;
+    cursor: pointer;
+    transition: color .3s ease;
+}*/
 
+.search-button:hover {
+    background: transparent;
+    border: none;
+    color: var(--color-principal);
 }
 
+/*iconify-icon:hover {
+    color: var(--color-principal);
+}*/
+
 .img-item {
-    margin: auto;
+    margin: 0 auto;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     width: 100%;
@@ -197,21 +228,46 @@ iconify-icon:hover {
     background-color: var(--color-fondoClaro);
     flex-wrap: wrap;
     border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-destacado {
+    max-width: 1200px;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    background-size: 20%;
+    background-color: var(--color-secundario);
+    flex-wrap: wrap;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .contenedor-items {
-    padding: 20px;
+    padding: 10px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 20px;
     width: 100%;
     transition: .3s;
 }
 
-.item {
+.contenedor-items-manga {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
     width: 100%;
-    height: auto;
-    margin: auto;
+    transition: .3s;
+}
+
+
+.item {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     border: 1px solid rgba(33, 53, 85, 0.10);
     background-color: var(--color-blanco);
     color: var(--color-principal);
@@ -222,6 +278,7 @@ iconify-icon:hover {
 }
 
 .contenedor-items .item:hover {
+    /*    outline: 2px solid var(--color-naranja);*/
     box-shadow: 0 0 10px rgba(33, 53, 85, 0.20);
     transform: scale(1.01);
 }
@@ -231,14 +288,30 @@ iconify-icon:hover {
     display: block;
     text-align: center;
     text-transform: uppercase;
-    margin: 10px 0;
+    margin: 10px 10px;
 }
 
 .autor-item {
-    font-size: .8rem;
+    font-size: .85rem;
     text-align: center;
     font-weight: 500;
+    /* margin: 10px 0; */
+}
+
+.categoria-item {
+    font-size: .75rem;
+    color: rgba(33, 53, 85, 0.60);
+    text-align: center;
+    font-weight: 600;
     margin: 10px 0;
+}
+
+.editorial-item,
+.isbn-item {
+    font-size: .7rem;
+    text-align: center;
+    font-weight: 500;
+    margin: 1px 0;
 }
 
 .precio-item {
@@ -247,13 +320,13 @@ iconify-icon:hover {
     text-align: center;
     font-weight: bold;
     font-size: 1.1rem;
-    margin: 10px;
+    margin: 15px;
     padding: 10px 0;
 }
 
 .boton-item {
     display: block;
-    margin: 10px auto;
+    margin: 5px auto;
     border: none;
     background: var(--color-principal);
     color: var(--color-fondoClaro);
@@ -269,7 +342,7 @@ iconify-icon:hover {
 
 .boton-item:hover {
     background-color: var(--color-naranja);
-    color:var(--color-principal);
+    color: var(--color-principal);
     font-weight: 600;
 }
 
@@ -277,17 +350,16 @@ iconify-icon:hover {
 section {
     width: 100%;
     padding: 10px;
-    background-color: var(--font-principal);
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* background-color: var(--font-principal); */
+    /* border-radius: 5px; */
+
 
 }
 
 .general {
     padding-top: 1rem;
     background-color: var(--color-blanco);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
+    min-height: 400px;
 }
 
 section h2 {
@@ -315,7 +387,7 @@ footer {
     justify-content: space-between;
     border-bottom: 1px solid var(--color-fondoClaro);
     border-radius: 0;
-    padding-bottom:  3rem ;
+    padding-bottom: 3rem;
 }
 
 footer nav li {
@@ -327,6 +399,7 @@ footer nav li {
 
 .social-icon {
     color: var(--color-fondoClaro);
+    font-size: 1.5rem;
     padding-right: 10px;
 }
 
@@ -344,8 +417,10 @@ img.logo-footer {
     filter: saturate(0);
     transition: all .3s ease;
 }
+
 img.logo-footer:hover {
     filter: none;
+    transform: scale(1.05)
 }
 
 .nav-footer {
@@ -440,6 +515,11 @@ h5 {
 @media only screen and (max-width: 768px) {
     .humburger-menu i {
         display: block;
+        color: var(--color-principal)
+    }
+
+    .contenedor {
+        max-width: 90%;
     }
 
     .nav-link {
@@ -465,12 +545,14 @@ h5 {
         background-color: var(--color-fondoClaro);
         color: var(--color-fondoClaro);
     }
-    .ubica{
+
+    .ubica {
         display: flex;
         flex-direction: column;
     }
+
     .g-map,
-    .detalle-ubicacion{
+    .detalle-ubicacion {
         width: 100%;
     }
 }
