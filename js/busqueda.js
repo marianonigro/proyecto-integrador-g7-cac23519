@@ -1,6 +1,6 @@
 // Función para realizar la búsqueda
 function buscarLibros(query) {
-	// Convertir la consulta a minúsculas para que sea insensible a mayúsculas y minúsculas
+	// Convertir la consulta a minúsculas y que no se diferencien entre mayúsculas y minúsculas
 	const queryLower = query.toLowerCase();
   
 	// Filtrar los libros que coinciden con la consulta

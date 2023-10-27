@@ -13,13 +13,10 @@ function crearTarjetasProductosCarrito() {
       const nuevoProducto = document.createElement("div");
       nuevoProducto.classList = "tarjeta-producto";
       nuevoProducto.innerHTML = `
-        <img class="img-item" src="${producto.imagen}" alt="${producto.titulo}">
-        <h4 class="titulo-item">${producto.titulo}</h4>
-        <p class="autor-item">Autor: ${producto.autor}</p>
-        <p class="categoria-item">Categoría: ${producto.categoria}</p>
-        <p class="editorial-item">Editorial: ${producto.editorial}</p>
+        <h4 class="titulo-autor">${producto.titulo}</h4>
+        <p class="autor-item">${producto.autor}</p>
         <p class="isbn-item">Isbn: ${producto.isbn}</p>
-        <span class="precio-item">$ ${producto.precio.toFixed(2)}</span>
+        <span class="precio-cart">$ ${producto.precio.toFixed(2)}</span>
     <div>
     <button>-</button>
     <span class="cantidad">${producto.cantidad}</span>
