@@ -29,25 +29,19 @@
                     <li class="nav-item"><a class="nav-link" href="../index.html#manga">Comics & Manga</a></li>
                     <li class="nav-item"><a class="nav-link" href="guia-de-compras.html">Guía de Compras</a></li>
                     <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                    <li class="nav-item"><a class="nav-link" href="carrito.html" title="cart"><iconify-icon icon="iconoir:cart" class="cart"></iconify-icon></a></li>
+                    <li class="nav-item"><a class="nav-link" href="carrito.html" title="cart"><iconify-icon icon="iconoir:cart" class="cart"></iconify-icon></a><span id="cuenta-carrito">0</span></li>
                 </ul>
-            </nav>
-            <form class="busqueda" action="/busqueda" method="get">
-                <input type="search" name="busqueda" id="busqueda"
-                    placeholder="Ingresar título, autor, editorial, ISBN">
-                <label for="busqueda"><iconify-icon icon="gg:search" class="search-icon"></iconify-icon></label>
-            </form>
+            </nav><br>
         </div>
     </header> <!-- Fin Header -->
 
     <main id="inicio" class="general"> <!-- Inicio del contenedor principal -->
 
         <section id="libros" class="general">
-            <h2>Guía de compras</h2>
+            <h2>Guía de Compras</h2>
             <section class="contenedor">
 
-                 <!--contenedor de los elementos-->
-                 <article class="contenedor-items">
+                 <article class="contenedor-items"> <!--contenedor de los elementos-->
                     <div class="faq-section">
                         <details>
                             <summary>
@@ -148,18 +142,26 @@
                 </article>
 
             </section>
-        </section>
-        <!-- </section> -->
+        </section> <!-- </section> -->
 
-        <!-- Inicio Footer -->
-        <footer>
+        <footer> <!-- Inicio Footer -->
             <section class="footer">
                 <nav class="social-media">
-                    <a href="mailto:bookshop@mail.com" title="Email"><iconify-icon icon="material-symbols:mail-outline" class="social-icon"></iconify-icon></a>                    </a>
-                    <a href="" title="facebook"><iconify-icon icon="mdi:facebook" class="social-icon"></iconify-icon></a>
-                    <a href="" title="instagram"><iconify-icon icon="mdi:instagram" class="social-icon"></iconify-icon></a>
-                    <a href="" title="spotify"><iconify-icon icon="mdi:spotify" class="social-icon"></iconify-icon></a>
-                    <a href="" title="twitter"><iconify-icon icon="mdi:twitter" class="social-icon"></iconify-icon></a>
+                    <a href="mailto:bookshop@mail.com" target="_blank">
+                        <iconify-icon icon="material-symbols:mail-outline" class="social-icon"></iconify-icon>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <iconify-icon icon="mdi:facebook" class="social-icon"></iconify-icon>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <iconify-icon icon="mdi:instagram" class="social-icon"></iconify-icon>
+                    </a>
+                    <a href="https://www.spotify.com" target="_blank">
+                        <iconify-icon icon="mdi:spotify" class="social-icon"></iconify-icon>
+                    </a>
+                    <a href="http://www.twitter.com" target="_blank">
+                        <iconify-icon icon="ri:twitter-x-line" class="social-icon"></iconify-icon>
+                    </a>
                 </nav>
                 <nav>
                     <ul class="navbar-nav" id="nav">
@@ -176,18 +178,17 @@
                 </picture>
             </section>
             <div>
-                <h5> 2023 Bookshops | Grupo 7 CaC 23519 Fullstack Python | All Rights Reserved</h5>
+                <h5>© 2023 Bookshops | Ex Grupo 7 Actual Grupo 1 CaC 23519 Fullstack Python | All Rights Reserved</h5>
             </div>
-        </footer>
-        <!-- Fin Footer -->
+        </footer> <!-- Fin Footer -->
 
-        <!-- Boton Ir Arriba -->
-        <div id="boton-arriba">
+        <div id="boton-arriba"> <!-- Boton Ir Arriba -->
             <i class="fa-solid fa-caret-up"></i>
         </div>
 
         <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
         <script src="../js/index.js"></script>
+
 </body>
 
 </html>

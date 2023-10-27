@@ -10,7 +10,7 @@
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Guía de Compras | Bookshop</title>
+    <title>Contacto | Bookshop</title>
 </head>
 
 <body>
@@ -27,18 +27,11 @@
                 <ul class="navbar-nav" id="nav">
                     <li class="nav-item"><a class="nav-link" href="../index.html#libros">Libros</a></li>
                     <li class="nav-item"><a class="nav-link" href="../index.html#manga">Comics & Manga</a></li>
-                    <li class="nav-item"><a class="nav-link" href="guia-de-compras.html">Guía de Compras</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="guia-de-compras.html">Guía de Compras</a></li>
                     <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                    <li class="nav-item"><a class="nav-link" href="carrito.html"><iconify-icon icon="iconoir:cart"
-                                class="cart"></iconify-icon></a></li>
+                    <li class="nav-item"><a class="nav-link" href="carrito.html"><iconify-icon icon="iconoir:cart"class="cart"></iconify-icon><span id="cuenta-carrito">0</span></a></li>
                 </ul>
-            </nav>
-            <form class="busqueda" action="/busqueda" method="get">
-                <input type="search" name="busqueda" id="busqueda"
-                    placeholder="Ingresar título, autor, editorial, ISBN">
-                <label for="busqueda"><iconify-icon icon="gg:search" class="search-icon"></iconify-icon></label>
-            </form>
+            </nav><br>
         </div>
     </header>
 
@@ -82,8 +75,8 @@
                             </div>
                         </div>
                         <div class="">
-                            <!-- inicio Formulario -->
-                            <div class="formulario">
+                            
+                            <div class="formulario"> <!-- inicio Formulario -->
                                 <div class="form-content">
                                     <h2 id="form-titulo" class="form-titulo">Formulario</h2>
                                     <form class="form" id="contac-form" action="" method="POST">
@@ -106,20 +99,21 @@
                                             <button class="submit" id="submit" type="submit">ENVIAR</button>
                                         </div>
                                     </form>
+                                    <a href="mailto:marianus@gmail.com" id="envio-mail">mail</a>
                                 </div>
-                            </div>
-                            <!-- fin Formulario -->
+                            </div> <!-- fin Formulario -->
+                            
                         </div>
             </section>
             </article>
 
         </section>
     </section>
-        <!-- Inicio Footer -->
-        <footer>
+
+        <footer> <!-- Inicio Footer -->
             <section class="footer">
                 <nav class="social-media">
-                    <a href="mailto:bookshop@mail.com">
+                    <a href="mailto:bookshop@mail.com" target="_blank">
                         <iconify-icon icon="material-symbols:mail-outline" class="social-icon"></iconify-icon>
                     </a>
                     <a href="">
@@ -132,7 +126,7 @@
                         <iconify-icon icon="mdi:spotify" class="social-icon"></iconify-icon>
                     </a>
                     <a href="">
-                        <iconify-icon icon="mdi:twitter" class="social-icon"></iconify-icon>
+                        <iconify-icon icon="ri:twitter-x-line" class="social-icon"></iconify-icon>
                     </a>
                 </nav>
                 <nav>
@@ -150,16 +144,13 @@
                 </picture>
             </section>
             <div>
-                <h5>© 2023 Bookshops | All Rights Reserved | Grupo 7 CaC #23519 Full Stack Python</h5>
+                <h5>© 2023 Bookshops | Ex Grupo 7 Actual Grupo 1 CaC 23519 Fullstack Python | All Rights Reserved</h5>
             </div>
-        </footer>
-        <!-- Fin Footer -->
+        </footer> <!-- Fin Footer -->
 
-        <!-- Boton Ir Arriba -->
-        <div id="boton-arriba">
+        <div id="boton-arriba"> <!-- Boton Ir Arriba -->
             <i class="fa-solid fa-caret-up"></i>
         </div>
-
 
         <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
         <script src="../js/index.js"></script>

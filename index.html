@@ -10,6 +10,10 @@
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="js/data.js"></script>
+    <script src="js/cartService.js" defer></script>
+    <script src="js/index.js" defer></script>
+
     <title>Home | Bookshop</title>
 </head>
 
@@ -29,232 +33,112 @@
                     <li class="nav-item"><a class="nav-link" href="#manga">Comics & Manga</a></li>
                     <li class="nav-item"><a class="nav-link" href="./pages/guia-de-compras.html">Guía de Compras</a></li>
                     <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./pages/carrito.html" title="cart"><iconify-icon icon="iconoir:cart" class="cart"></iconify-icon></a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/carrito.html" title="cart"><iconify-icon
+                                icon="iconoir:cart" class="cart"></iconify-icon><span id="cuenta-carrito">0</span></a></li>
                 </ul>
             </nav>
+
             <form class="busqueda" action="/busqueda" method="get">
-                <input type="search" name="busqueda" id="busqueda"
-                    placeholder="Ingresar título, autor, editorial, ISBN">
-                <label for="busqueda"><iconify-icon icon="gg:search" class="search-icon"></iconify-icon></label>
+                <input type="search" name="busqueda" id="busqueda" placeholder="Ingresar título, autor, editorial, ISBN">
+                <button for="busqueda"type="submit" class="search-button">
+                <iconify-icon icon="gg:search" class="search-icon"></iconify-icon>
+                </button>
             </form>
+
         </div>
     </header> <!-- Fin Header -->
 
     <main id="inicio" class="general"> <!-- Inicio del contenedor principal -->
 
-        <section id="libros" class="general">
-            <h2>Libros Recomendados</h2>
+        <section id="libros" class="general"> <!-- Inicio Contenido Libros -->
+            <h2>Selección Libros</h2>
             <section class="contenedor">
-
-                <!--contenedor de los elementos-->
                 <article class="contenedor-items">
-                    <div class="item">
-                        <img src="images/book-cover/libro-01.webp" alt="" class="img-item">
-                        <h4 class="titulo-item">Libro1</h4>
-                        <p class="autor-item">Nombre del Autor</p>
-                        <span class="precio-item">$15.000</span>
-                        <button class="boton-item">Agregar al carrito</button>
-                    </div>
-                    <div class="item">
-                        <img src="images/book-cover/libro-02.webp" alt="" class="img-item">
-                        <h4 class="titulo-item">Libro2</h4>
-                        <p class="autor-item">Nombre del Autor</p>
-                        <span class="precio-item">$15.000</span>
-                        <button class="boton-item">Agregar al carrito</button>
-                    </div>
-                    <div class="item">
-                        <img src="images/book-cover/libro-03.webp" alt="" class="img-item">
-                        <h4 class="titulo-item">Libro3</h4>
-                        <p class="autor-item">Nombre del Autor</p>
-                        <span class="precio-item">$15.000</span>
-                        <button class="boton-item">Agregar al carrito</button>
-                    </div>
-                    <div class="item">
-                        <img src="images/book-cover/libro-04.webp" alt="" class="img-item">
-                        <h4 class="titulo-item">Libro4</h4>
-                        <p class="autor-item">Nombre del Autor</p>
-                        <span class="precio-item">$15.000</span>
-                        <button class="boton-item">Agregar al carrito</button>
-                    </div>
-                    <div class="item">
-                        <img src="images/book-cover/libro-05.webp" alt="" class="img-item"">
-                        <h4 class=" titulo-item">Libro5</h4>
-                        <p class="autor-item">Nombre del Autor</p>
-                        <span class=" precio-item">$15.000</span>
-                        <button class="boton-item">Agregar al carrito</button>
-                    </div>
-                    <div class="item">
-                        <img src="images/book-cover/libro-06.webp" alt="" class="img-item">
-                        <h4 class="titulo-item">Libro6</h4>
-                        <p class="autor-item">Nombre del Autor</p>
-                        <span class="precio-item">$15.000</span>
-                        <button class="boton-item">Agregar al carrito</button>
-                    </div>
-                    <div class="item">
-                        <img src="images/book-cover/libro-07.webp" alt="" class="img-item">
-                        <h4 class="titulo-item">Libro7</h4>
-                        <p class="autor-item">Nombre del Autor</p>
-                        <span class="precio-item">$15.000</span>
-                        <button class="boton-item">Agregar al carrito</button>
-                    </div>
-                    <div class="item">
-                        <img src="images/book-cover/libro-08.webp" alt="" class="img-item">
-                        <h4 class="titulo-item">Libro8</h4>
-                        <p class="autor-item">Nombre del Autor</p>
-                        <span class="precio-item">$15.000</span>
-                        <button class="boton-item">Agregar al carrito</button>
-                    </div>
-
+                    <div class="contenedor-items" id="productos-libros"></div>
                 </article>
-
             </section>
-        </section>
+        </section> <!-- Fin Contenido Libros -->
 
-
-        <section id="manga" class="general">
+        <section id="comics-manga" class="general"> <!-- Inicio Contenido Comics & Manga -->
             <h2>Selección de Comics y Manga</h2>
             <section class="contenedor">
-
-                <!--contenedor de los elementos-->
                 <article class="contenedor-items">
-                    <div class="item">
-                        <img src="images/comic-manga/comic-16.webp" alt="" class="img-item">
-                        <h4 class="titulo-item">Comic - Manga</h4>
-                        <p class="autor-item">Nombre del Autor</p>
-                        <span class="precio-item">$15.000</span>
-                        <button class="boton-item">Agregar al carrito</button>
-                    </div>
-                    <div class="item">
-                        <img src="images/comic-manga/comic-09.webp" alt="" class="img-item">
-                        <h4 class="titulo-item">Comic - Manga</h4>
-                        <p class="autor-item">Nombre del Autor</p>
-                        <span class="precio-item">$15.000</span>
-                        <button class="boton-item">Agregar al carrito</button>
-                    </div>
-                    <div class="item">
-                        <img src="images/comic-manga/comic-10.webp" alt="" class="img-item">
-                        <h4 class="titulo-item">Comic - Manga</h4>
-                        <p class="autor-item">Nombre del Autor</p>
-                        <span class="precio-item">$15.000</span>
-                        <button class="boton-item">Agregar al carrito</button>
-                    </div>
-                    <div class="item">
-                        <img src="images/comic-manga/comic-11.webp" alt="" class="img-item">
-                        <h4 class="titulo-item">Comic - Manga</h4>
-                        <p class="autor-item">Nombre del Autor</p>
-                        <span class="precio-item">$15.000</span>
-                        <button class="boton-item">Agregar al carrito</button>
-                    </div>
-                    <div class="item">
-                        <img src="images/comic-manga/comic-05.webp" alt="" class="img-item"">
-                        <h4 class=" titulo-item">Comic - Manga</h4>
-                        <p class="autor-item">Nombre del Autor</p>
-                        <span class=" precio-item">$15.000</span>
-                        <button class="boton-item">Agregar al carrito</button>
-                    </div>
-                    <div class="item">
-                        <img src="images/comic-manga/comic-06.webp" alt="" class="img-item">
-                        <h4 class="titulo-item">Comic - Manga</h4>
-                        <p class="autor-item">Nombre del Autor</p>
-                        <span class="precio-item">$15.000</span>
-                        <button class="boton-item">Agregar al carrito</button>
-                    </div>
-                    <div class="item">
-                        <img src="images/comic-manga/comic-07.webp" alt="" class="img-item">
-                        <h4 class="titulo-item">Comic - Manga</h4>
-                        <p class="autor-item">Nombre del Autor</p>
-                        <span class="precio-item">$15.000</span>
-                        <button class="boton-item">Agregar al carrito</button>
-                    </div>
-                    <div class="item">
-                        <img src="images/comic-manga/comic-08.webp" alt="" class="img-item">
-                        <h4 class="titulo-item">Comic - Manga</h4>
-                        <p class="autor-item">Nombre del Autor</p>
-                        <span class="precio-item">$15.000</span>
-                        <button class="boton-item">Agregar al carrito</button>
-                    </div>
-
+                    <div class="contenedor-items" id="productos-comics"></div>
                 </article>
-
-            </section>
-        </section>
-
-        <section id="los-mas-vendidos" class="general">
-            <h2>Lo más Vendidos de la Semana</h2>
-            <section class="contenedor">
-
-                <!--contenedor de los elementos-->
                 <article class="contenedor-items">
-                    <div class="item">
-                        <img src="images/book-cover/libro-01.webp" alt="" class="img-item">
-                        <h4 class="titulo-item">Libro1</h4>
-                        <p class="autor-item">Nombre del Autor</p>
-                        <span class="precio-item">$15.000</span>
-                        <button class="boton-item">Agregar al carrito</button>
-                    </div>
-                    <div class="item">
-                        <img src="images/book-cover/libro-02.webp" alt="" class="img-item">
-                        <h4 class="titulo-item">Libro2</h4>
-                        <p class="autor-item">Nombre del Autor</p>
-                        <span class="precio-item">$15.000</span>
-                        <button class="boton-item">Agregar al carrito</button>
-                    </div>
-                    <div class="item">
-                        <img src="images/book-cover/libro-03.webp" alt="" class="img-item">
-                        <h4 class="titulo-item">Libro3</h4>
-                        <p class="autor-item">Nombre del Autor</p>
-                        <span class="precio-item">$15.000</span>
-                        <button class="boton-item">Agregar al carrito</button>
-                    </div>
-                    <div class="item">
-                        <img src="images/book-cover/libro-08.webp" alt="" class="img-item">
-                        <h4 class="titulo-item">Libro8</h4>
-                        <p class="autor-item">Nombre del Autor</p>
-                        <span class="precio-item">$15.000</span>
-                        <button class="boton-item">Agregar al carrito</button>
-                    </div>
+                    <div class="contenedor-items" id="productos-manga"></div>
                 </article>
             </section>
-        </section>
-        <!-- </section> -->
+        </section> <!-- Fin Contenido Comics & Manga -->
 
-        <!-- Inicio Footer -->
-        <footer>
-            <section class="footer">
-                <nav class="social-media">
-                    <a href="mailto:bookshop@mail.com" title="Email"><iconify-icon icon="material-symbols:mail-outline" class="social-icon"></iconify-icon></a>                    </a>
-                    <a href="" title="facebook"><iconify-icon icon="mdi:facebook" class="social-icon"></iconify-icon></a>
-                    <a href="" title="instagram"><iconify-icon icon="mdi:instagram" class="social-icon"></iconify-icon></a>
-                    <a href="" title="spotify"><iconify-icon icon="mdi:spotify" class="social-icon"></iconify-icon></a>
-                    <a href="" title="twitter"><iconify-icon icon="mdi:twitter" class="social-icon"></iconify-icon></a>
-                </nav>
-                <nav>
-                    <ul class="navbar-nav" id="nav">
-                        <li class="nav-item"><a class="nav-link nav-footer" href="index.html#libros">Libros</a></li>
-                        <li class="nav-item"><a class="nav-link nav-footer" href="index.html#manga">Comics & Manga</a></li>
-                        <li class="nav-item"><a class="nav-link nav-footer" href="../pages/guia-de-compras.html">Guía de Compras</a></li>
-                        <li class="nav-item"><a class="nav-link nav-footer" href="../pages/contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
-                <picture class="logo-abajo">
-                    <a href="index.html">
-                        <img class="logo-footer" src="images/branding/isologo-bookshop-bo.svg" alt="logo">
-                    </a>
-                </picture>
+         <section id="los-mas-vendidoss" class="general"> <!-- Inicio Contenido Mas Vendidos -->
+            <h2>Los más Vendidos de la Semana</h2>
+            <section class="contenedor-destacado background-image">
+                <article class="contenedor-items">
+                    <div class="contenedor-items" id="productos-mas-vendidos"></div>
+                </article>
             </section>
-            <div>
-                <h5> 2023 Bookshops | Grupo 7 CaC 23519 Fullstack Python | All Rights Reserved</h5>
-            </div>
-        </footer>
-        <!-- Fin Footer -->
+        </section> <!-- Fin Contenido Mas Vendidos -->
 
-        <!-- Boton Ir Arriba -->
-        <div id="boton-arriba">
-            <i class="fa-solid fa-caret-up"></i>
+            <section id="resultado-busqueda" class="general"> <!-- Inicio Mostrará los resultados de la búsqueda -->
+                <h2>Resultado de Búsqueda</h2>
+                <section class="contenedor">
+                    <article class="contenedor-items">
+                        <div class="contenedor-items" id="resultados"></div>
+                    </article>
+                </section>
+            </section> <!-- Fin Mostrará los resultados de la búsqueda -->
+
+        </section>
+
+    </main> <!-- Final del contenedor principal -->
+
+    <footer> <!-- Inicio Footer -->
+        <section class="footer">
+            <nav class="social-media">
+                <a href="mailto:bookshop@mail.com" target="_blank">
+                    <iconify-icon icon="material-symbols:mail-outline" class="social-icon"></iconify-icon>
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <iconify-icon icon="mdi:facebook" class="social-icon"></iconify-icon>
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <iconify-icon icon="mdi:instagram" class="social-icon"></iconify-icon>
+                </a>
+                <a href="https://www.spotify.com" target="_blank">
+                    <iconify-icon icon="mdi:spotify" class="social-icon"></iconify-icon>
+                </a>
+                <a href="http://www.twitter.com" target="_blank">
+                    <iconify-icon icon="ri:twitter-x-line" class="social-icon"></iconify-icon>
+                </a>
+            </nav>
+            <nav>
+                <ul class="navbar-nav" id="nav">
+                    <li class="nav-item"><a class="nav-link nav-footer" href="index.html#libros">Libros</a></li>
+                    <li class="nav-item"><a class="nav-link nav-footer" href="index.html#manga">Comics & Manga</a></li>
+                    <li class="nav-item"><a class="nav-link nav-footer" href="./pages/guia-de-compras.html">Guía de
+                            Compras</a></li>
+                    <li class="nav-item"><a class="nav-link nav-footer" href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <picture class="logo-abajo">
+                <a href="index.html">
+                    <img class="logo-footer" src="images/branding/isologo-bookshop-bo.svg" alt="logo">
+                </a>
+            </picture>
+        </section>
+        <div>
+            <h5>© 2023 Bookshops | Ex Grupo 7 Actual Grupo 1 CaC 23519 Fullstack Python | All Rights Reserved</h5>
         </div>
+    </footer> <!-- Fin Footer -->
+    
+    <div id="boton-arriba"> <!-- Boton Ir Arriba -->
+        <i class="fa-solid fa-caret-up"></i>
+    </div>
 
-        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-        <script src="./js/index.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="js/busqueda.js"></script>
+
 </body>
 
 </html>
