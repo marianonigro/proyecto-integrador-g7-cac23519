@@ -1,6 +1,6 @@
 ## Proyecto Integrador Grupo 1 CAC#23519 (ex Grupo 7) - 🌎 [Ver el Proyecto](https://marianonigro.github.io/proyecto-integrador-g7-cac23519/)
 
-# 🌎 Sitio Web Bookshop
+# 🌎 [Sitio Web Bookshop](https://marianonigro.github.io/proyecto-integrador-g7-cac23519/)
 ![Inicio](https://github.com/marianonigro/proyecto-integrador-g7-cac23519/assets/42101589/d0b27c69-c587-48fe-9a20-ab610c34a120)
 
 ### ✏️ 1. Título y Descripción del Proyecto:
