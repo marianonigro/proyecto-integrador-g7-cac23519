@@ -5,11 +5,6 @@
     <title>Lista de Productos</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<<<<<<< HEAD
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/styles.css">
-=======
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,7 +12,6 @@
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <script src="../js/index.js" defer></script>
->>>>>>> main
 </head>
 
 <body>
@@ -43,27 +37,27 @@
                             <thead>
                                 <tr>
                                     <th scope="col">Id</th>
+                                    <th scope="col">Imagen</th>
                                     <th scope="col">ISBN</th>
                                     <th scope="col">Titulo</th>
                                     <th scope="col">Autor</th>
                                     <th scope="col">Categoria</th>
                                     <th scope="col">Editorial</th>
-                                    <th scope="col">Imagen</th>
                                     <th scope="col">Precio</th>
                                     <th scope="col">Cantidad</th>
                                     <th scope="col">Acciones</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr class="" v-for="producto in productos">
+                                <tr class="align-middle" v-for="producto in productos">
                                     <td scope="row">{{producto.id}}</td>
+                                    <td><img width="60" :src="producto.imagen" :alt="producto.nombre"></td>
                                     <td>{{producto.isbn}}</td>
                                     <td>{{producto.titulo}}</td>
                                     <td>{{producto.autor}}</td>
                                     <td>{{producto.categoria}}</td>
                                     <td>{{producto.editorial}}</td>
                                     <!-- <td>{{producto.imagen}} <img width="60" :src="producto.imagen" :alt="producto.nombre"></td> -->
-                                    <td><img width="60" :src="producto.imagen" :alt="producto.nombre"></td>
                                     <td>{{producto.precio}}</td>
                                     <td>{{producto.cantidad}}</td>
                                     <td class="td-btn">
@@ -85,14 +79,10 @@
     </main>
 
     <footer id="footer"></footer>
-
-<<<<<<< HEAD
-=======
     <div id="boton-arriba"> <!-- Boton Ir Arriba -->
         <i class="fa-solid fa-caret-up"></i>
     </div>
 
->>>>>>> main
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">

@@ -1,5 +1,5 @@
 document.getElementById("header").innerHTML = `
-<div class="background-image">
+<div class="bg-crud">
     <nav class="navbar-m">
         <a href="../index.html">
             <img class="logo" src="../images/branding/isologo-bookshop.svg">
