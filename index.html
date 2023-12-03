@@ -10,7 +10,7 @@
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
-    <script src="js/data.js"></script>
+    <!-- <script src="js/data.js"></script> -->
     <script src="js/cartService.js" defer></script>
     <script src="js/index.js" defer></script>
 
@@ -21,27 +21,31 @@
 
     <header> <!-- Inicio Header -->
         <div class="background-image">
-            <nav class="navbar">
+            <nav class="navbar-m">
                 <a href="index.html">
                     <img class="logo" src="images/branding/isologo-bookshop.svg" alt="isologo bookshop">
                 </a>
                 <div class="humburger-menu" id="toggle">
                     <i class="fa-solid fa-bars"></i>
                 </div>
-                <ul class="navbar-nav" id="nav">
+                <ul class="navbar-na" id="nav">
                     <li class="nav-item"><a class="nav-link" href="#libros">Libros</a></li>
                     <li class="nav-item"><a class="nav-link" href="#comics-manga">Comics & Manga</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./pages/guia-de-compras.html">Guía de Compras</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/guia-de-compras.html">Guía de Compras</a>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/listar.html">CRUD</a></li>
                     <li class="nav-item"><a class="nav-link" href="./pages/carrito.html" title="cart"><iconify-icon
-                                icon="iconoir:cart" class="cart"></iconify-icon><span id="cuenta-carrito">0</span></a></li>
+                                icon="iconoir:cart" class="cart"></iconify-icon><span id="cuenta-carrito">0</span></a>
+                    </li>
                 </ul>
             </nav>
 
             <form class="busqueda" action="/busqueda" method="get">
-                <input type="search" name="busqueda" id="busqueda" placeholder="Ingresar título, autor, editorial, ISBN">
-                <button for="busqueda"type="submit" class="search-button">
-                <iconify-icon icon="gg:search" class="search-icon"></iconify-icon>
+                <input type="search" name="busqueda" id="busqueda"
+                    placeholder="Ingresar título, autor, editorial, ISBN">
+                <button for="busqueda" type="submit" class="search-button">
+                    <iconify-icon icon="gg:search" class="search-icon"></iconify-icon>
                 </button>
             </form>
 
@@ -80,14 +84,14 @@
             </section>
         </section> <!-- Fin Contenido Mas Vendidos -->
 
-            <section id="resultado-busqueda" class="general"> <!-- Inicio Mostrará los resultados de la búsqueda -->
-                <h2>Resultado de Búsqueda</h2>
-                <section class="contenedor">
-                    <article class="contenedor-items">
-                        <div class="contenedor-items" id="resultados"></div>
-                    </article>
-                </section>
-            </section> <!-- Fin Mostrará los resultados de la búsqueda -->
+        <section id="resultado-busqueda" class="general"> <!-- Inicio Mostrará los resultados de la búsqueda -->
+            <h2>Resultado de Búsqueda</h2>
+            <section class="contenedor">
+                <article class="contenedor-items">
+                    <div class="contenedor-items" id="resultados"></div>
+                </article>
+            </section>
+        </section> <!-- Fin Mostrará los resultados de la búsqueda -->
 
         </section>
 
@@ -113,9 +117,10 @@
                 </a>
             </nav>
             <nav>
-                <ul class="navbar-nav" id="nav">
+                <ul class="navbar-na" id="nav">
                     <li class="nav-item"><a class="nav-link nav-footer" href="index.html#libros">Libros</a></li>
-                    <li class="nav-item"><a class="nav-link nav-footer" href="index.html#comics-manga">Comics & Manga</a></li>
+                    <li class="nav-item"><a class="nav-link nav-footer" href="index.html#comics-manga">Comics &
+                            Manga</a></li>
                     <li class="nav-item"><a class="nav-link nav-footer" href="./pages/guia-de-compras.html">Guía de
                             Compras</a></li>
                     <li class="nav-item"><a class="nav-link nav-footer" href="./pages/contacto.html">Contacto</a></li>
@@ -131,7 +136,7 @@
             <h5>© 2023 Bookshops | Ex Grupo 7 Actual Grupo 1 CaC 23519 Fullstack Python | All Rights Reserved</h5>
         </div>
     </footer> <!-- Fin Footer -->
-    
+
     <div id="boton-arriba"> <!-- Boton Ir Arriba -->
         <i class="fa-solid fa-caret-up"></i>
     </div>
