@@ -21,7 +21,6 @@ document.getElementById("footer").innerHTML = `
         <ul class="navbar-na" id="nav">
             <li class="nav-item"><a class="nav-link nav-footer" href="../index.html#libros">Home</a></li>
             <li class="nav-item"><a class="nav-link nav-footer" href="crear.html">Crear</a></li>
-            <li class="nav-item"><a class="nav-link nav-footer" href="editar.html">Editar</a></li>
             <li class="nav-item"><a class="nav-link nav-footer" href="listar.html">Listar</a></li>
         </ul>
     </nav>

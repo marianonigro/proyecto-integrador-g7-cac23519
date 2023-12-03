@@ -10,7 +10,6 @@ document.getElementById("header").innerHTML = `
         <ul class="navbar-na" id="nav">
             <li class="nav-item"><a class="nav-link" href="../index.html#libros">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="crear.html">Crear</a></li>
-            <li class="nav-item"><a class="nav-link" href="editar.html">Editar</a></li>
             <li class="nav-item"><a class="nav-link" href="listar.html">Listar</a></li>
         </ul>
     </nav><br>
