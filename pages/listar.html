@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Lista de Productos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <main>
+        <div id="app" class="container">
+            <h2 class="text text-center pt-4">Lista de Productos</h2>
+            <br>
+            <a class="btn1 btn2 btn-pri float-end me-2" href="crear.html">Nuevo</a>
+            <br><br>
+            <div v-if="error">
+                <p>Lo sentimos , ........</p>
+            </div>
+            <div v-else>
+                <section v-if="cargando">
+                    <div class="spinner-border"></div>
+                    <p>Cargando .....</p>
+                </section>
+                <section v-else>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">ISBN</th>
+                                    <th scope="col">Titulo</th>
+                                    <th scope="col">Autor</th>
+                                    <th scope="col">Categoria</th>
+                                    <th scope="col">Editorial</th>
+                                    <th scope="col">Imagen</th>
+                                    <th scope="col">Precio</th>
+                                    <th scope="col">Cantidad</th>
+                                    <th scope="col">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="" v-for="producto in productos">
+                                    <td scope="row">{{producto.id}}</td>
+                                    <td>{{producto.isbn}}</td>
+                                    <td>{{producto.titulo}}</td>
+                                    <td>{{producto.autor}}</td>
+                                    <td>{{producto.categoria}}</td>
+                                    <td>{{producto.editorial}}</td>
+                                    <!-- <td>{{producto.imagen}} <img width="60" :src="producto.imagen" :alt="producto.nombre"></td> -->
+                                    <td><img width="60" :src="producto.imagen" :alt="producto.nombre"></td>
+                                    <td>{{producto.precio}}</td>
+                                    <td>{{producto.cantidad}}</td>
+                                    <td class="td-btn">
+                                        <a class="btn-icon-e d-flex align-center justify-content-center my-1 p-2"
+                                            :href="'editar.html?id='+ producto.id"><iconify-icon
+                                                icon="carbon:edit"></iconify-icon></a>
+                                        <button type="button"
+                                            class="btn-icon-r d-flex align-center justify-content-center my-1 p-2"
+                                            v-on:click="eliminar(producto.id)"><iconify-icon
+                                                icon="carbon:delete"></iconify-icon></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../js/listar.js"></script>
+    <script src="../js/footer.js"></script>
+</body>
+
+</html>

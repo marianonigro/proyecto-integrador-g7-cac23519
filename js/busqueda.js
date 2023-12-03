@@ -5,19 +5,20 @@ function buscarProductos(query) {
 
   // Filtrar los productos que coinciden con la consulta
   const resultados = data_bookshop.filter((producto) => {
-      // Normalizar y convertir el texto del producto a minúsculas para la comparación
-      const tituloNormalized = producto.titulo.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-      const autorNormalized = producto.autor.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-      const editorialNormalized = producto.editorial.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-      const isbnNormalized = producto.isbn.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 
-      // Comprobar si la consulta se encuentra en el título, autor, editorial o ISBN
-      return (
-          tituloNormalized.includes(queryNormalized) ||
-          autorNormalized.includes(queryNormalized) ||
-          editorialNormalized.includes(queryNormalized) ||
-          isbnNormalized.includes(queryNormalized)
-      );
+    // Normalizar y convertir el texto del producto a minúsculas para la comparación
+    const tituloNormalized = producto.titulo.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    const autorNormalized = producto.autor.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    const editorialNormalized = producto.editorial.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    const isbnNormalized = (producto.isbn || '').toString().normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+
+    // Comprobar si la consulta se encuentra en el título, autor, editorial o ISBN
+    return (
+      tituloNormalized.includes(queryNormalized) ||
+      autorNormalized.includes(queryNormalized) ||
+      editorialNormalized.includes(queryNormalized) ||
+      isbnNormalized.includes(queryNormalized)
+    );
   });
 
   return resultados;
@@ -31,13 +32,13 @@ function mostrarResultados(resultados) {
   resultadoContainer.innerHTML = "";
 
   if (resultados.length === 0) {
-      resultadoContainer.textContent = "No se encontraron resultados.";
+    resultadoContainer.textContent = "No se encontraron resultados.";
   } else {
-      resultados.forEach((producto) => {
-          // Crea un elemento para mostrar el producto
-          const elementoProducto = document.createElement("div");
-          elementoProducto.classList.add("item");
-          elementoProducto.innerHTML = `
+    resultados.forEach((producto) => {
+      // Crea un elemento para mostrar el producto
+      const elementoProducto = document.createElement("div");
+      elementoProducto.classList.add("item");
+      elementoProducto.innerHTML = `
                       <img class="img-item" src="${producto.imagen}" alt="${producto.titulo}">
                       <h4 class="titulo-item">${producto.titulo}</h4>
                       <p class="autor-item">Autor: ${producto.autor}</p>
@@ -48,9 +49,9 @@ function mostrarResultados(resultados) {
                       <button class="boton-item">Agregar al carrito</button>
           `;
 
-          // Agrega el producto al contenedor de resultados
-          resultadoContainer.appendChild(elementoProducto);
-      });
+      // Agrega el producto al contenedor de resultados
+      resultadoContainer.appendChild(elementoProducto);
+    });
   }
 }
 

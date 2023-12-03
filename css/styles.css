@@ -3,6 +3,7 @@
 @import 'faq.css';
 @import 'form.css';
 @import 'cart.css';
+@import 'crud.css';
 
 :root {
     --color-principal: #213555;
@@ -62,7 +63,7 @@ header {
     transform: scale(1.05)
 }
 
-.navbar {
+.navbar-m {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -72,7 +73,7 @@ header {
     left: 0;
 }
 
-.navbar-nav {
+.navbar-na {
     display: flex;
 }
 
@@ -359,7 +360,7 @@ section {
 .general {
     padding-top: 1rem;
     background-color: var(--color-blanco);
-    min-height: 400px;
+    min-height: 620px;
 }
 
 section h2 {
@@ -397,6 +398,10 @@ footer nav li {
     align-items: center;
 }
 
+.social-media {
+    width: 300px;
+}
+
 .social-icon {
     color: var(--color-fondoClaro);
     font-size: 1.5rem;
@@ -405,10 +410,6 @@ footer nav li {
 
 .social-icon:hover {
     color: var(--color-naranja);
-}
-
-.logo-abajo {
-    display: block;
 }
 
 img.logo-footer {
@@ -528,11 +529,11 @@ h5 {
         font-weight: 600;
     }
 
-    .navbar-nav {
+    .navbar-na {
         display: none;
     }
 
-    .navbar-nav.active {
+    .navbar-na.active {
         position: absolute;
         right: 0;
         top: 140px;
