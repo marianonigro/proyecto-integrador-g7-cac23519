@@ -1,8 +1,8 @@
 // Validación de formulario
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("contact-form");
 
-    form.addEventListener("submit", function(event) {
+    form.addEventListener("submit", function (event) {
         event.preventDefault();
 
         const nombre = document.getElementById("nombre").value.trim();
@@ -64,15 +64,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Formulario para envío pre-configurado
 
-const $form = document.querySelector('#contac-form')
-const $botonMailto = document.querySelector('#envio-mail')
+// const $form = document.querySelector('#contac-form')
+// const $botonMailto = document.querySelector('#envio-mail')
 
-$form.addEventListener('submit', handleSubmit)
+// $form.addEventListener('submit', handleSubmit)
 
-function handleSubmit(event) {
-    event.preventDefault()
-    const form = new FormData(this)
-    console.log(form.get('nombre'))
-    $botonMailto.setAttribute('href', `mailto:marianus@gmail.com?subject=${form.get('nombre')} [ ${form.get('email')} ]&body=${form.get('mensaje')}`)
-    $botonMailto.click()
-}
+// function handleSubmit(event) {
+//     event.preventDefault()
+//     const form = new FormData(this)
+//     console.log(form.get('nombre'))
+//     $botonMailto.setAttribute('href', `mailto:marianus@gmail.com?subject=${form.get('nombre')} [ ${form.get('email')} ]&body=${form.get('mensaje')}`)
+//     $botonMailto.click()
+// }
